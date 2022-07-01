@@ -10,6 +10,18 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  let nuevoArray = []
+  let claves = Object.keys(objeto); // claves = ["nombre", "color", "macho", "edad"]
+  console.log(claves,"esto es claves")
+for(let i=0; i< claves.length; i++){
+    nuevoArray.push([claves[i]]);
+}
+let valores = Object.values(objeto); // valores = ["Scott", "Negro", true, 5];
+console.log(valores,"esto es Values")
+for(let i=0; i< valores.length; i++){
+  nuevoArray[i].push(valores[i]);
+}
+return nuevoArray
 }
 
 
